@@ -1,81 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matreshka</title>
+    <title>Matreshka - Русский ресторан</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-    <div class="head">
+    <header>
         <div class="headLeft">
-            <img src="img/icons8-матрешка-24.png" alt="">
-            <p>Matreshka</p>
-            <br>
-            <em>
-                <h3>Вкус детства, подаренный бабушкой</h3>
-            </em>
+            <div class="logo-container">
+                <img src="img/icons8-матрешка-24.png" alt="Логотип Matreshka">
+                <h1>Matreshka</h1>
+            </div>
+            <p class="tagline"><em>Вкус детства, подаренный бабушкой</em></p>
         </div>
-        <div class="headRight">
+        <nav class="headRight">
             <div class="links">
-                <a href="">главная</a>
-                <a href="">о ресторане</a>
-                <a href="">меню</a>
-                <a href="">контакты</a>
+                <a href="#main">главная</a>
+                <a href="#about">о ресторане</a>
+                <a href="#menu">меню</a>
+                <a href="#contacts">контакты</a>
             </div>
             <div class="but">
                 <button>забронировать стол</button>
             </div>
-        </div>
-    </div>
-    <div class="BigImg">
-        <img src="img/зал1.jpg" alt="">
-        <em>
-            <h4>Ресторан Matreshka — это место, где оживают старинные рецепты, а каждый уголок пропитан духом русского
-                гостеприимства.
-                Мы собрали для вас самые любимые блюда из разных уголков России, чтобы вы могли насладиться настоящим
-                вкусом домашней кухни
-                в самом сердце города</h4><em>
-                <audio controls>
-                    <source src="img/115-sitcom-laugh.mp3" type="audio/mpeg">
-                </audio>
-    </div>
-    <div class="double">
-        <div class="one">
-            <h3>режим работы </h3>
-        </div>
-        <div class="two">
-            <!-- <img src="img/такрелки.jpg" alt=""> -->
-            <video controls poster="img/пельмени.jpg">
-                <sourse src="img/fc8c2844201d4341e455356ebfe74fd2.mp4" type="video/mp4">
-            </video>
-        </div>
-    </div>
-    <div class="booking">
-        <!-- форма брони стола -->
-    </div>
-    <div class="bottom">
+        </nav>
+    </header>
+
+    <main>
+        <section id="main" class="hero">
+            <img src="img/зал1.jpg" alt="Интерьер ресторана Matreshka">
+            <div class="hero-text">
+                <h4>Ресторан Matreshka — это место, где оживают старинные рецепты, а каждый уголок пропитан духом русского
+                    гостеприимства.
+                    Мы собрали для вас самые любимые блюда из разных уголков России, чтобы вы могли насладиться настоящим
+                    вкусом домашней кухни
+                    в самом сердце города</h4>
+            </div>
+        </section>
+
+        <section id="about" class="double">
+            <article class="one">
+                <h2>Режим работы</h2>
+                <p>Понедельник - Четверг: 10:00 - 22:00</p>
+                <p>Пятница - Воскресенье: 10:00 - 00:00</p>
+            </article>
+            <div class="two">
+                <video controls poster="img/пельмени.jpg">
+                    <source src="img/fc8c2844201d4341e455356ebfe74fd2.mp4" type="video/mp4">
+                    Ваш браузер не поддерживает видео элемент.
+                </video>
+            </div>
+        </section>
+
+        <section id="menu">
+            <h2>Наше меню</h2>
+            <!-- Здесь будет содержимое меню -->
+        </section>
+
+        <section class="booking">
+            <h2>Забронировать стол</h2>
+            <!-- Форма бронирования стола -->
+        </section>
+    </main>
+
+    <footer>
         <div class="rightBottom">
-            <div class="links2">
-                <a href="">главная</a>
-                <a href="">о ресторане</a>
-                <a href="">меню</a>
-                <a href="">контакты</a>
-            </div>
+            <nav class="links2">
+                <a href="#main">главная</a>
+                <a href="#about">о ресторане</a>
+                <a href="#menu">меню</a>
+                <a href="#contacts">контакты</a>
+            </nav>
             <div class="one2">
-
+                <!-- Дополнительная информация -->
             </div>
         </div>
-        <div class="leftBottom">
-            <!-- иконка -->
-            <!-- связь с нами -->
+        <div class="leftBottom" id="contacts">
+            <h3>Свяжитесь с нами</h3>
+            <p>Телефон: +7 (XXX) XXX-XX-XX</p>
+            <p>Адрес: ул. Примерная, д. 123, Москва</p>
+            <!-- Иконки социальных сетей -->
         </div>
-
-    </div>
+    </footer>
 </body>
 
 </html>
-
-<!-- изменить структуру сайта с header, main, fооter  -->
